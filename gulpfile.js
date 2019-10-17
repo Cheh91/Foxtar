@@ -84,4 +84,4 @@ gulp.task('watch', function() {
 
 // для того чтобы запускалось несколько действий нужен таск по дефолту
 // чтобы запустить этот таск достаточно прописать gulp
-gulp.task('default', gulp.parallel('scss', 'browser-sync', 'watch'))
+gulp.task('default', gulp.parallel('js', 'scss', 'browser-sync', 'watch'))
