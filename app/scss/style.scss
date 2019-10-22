@@ -5,6 +5,7 @@
 // }
 @import "vars";
 @import "fonts";
+@import "all-items";
 body {
     font-size: 15px;
     line-height: 24px;
@@ -201,6 +202,29 @@ a {
     content: '\f095';
 }
 
+.footer__list {
+    li {
+        padding-left: 21px;
+        padding-bottom: 16px;
+        position: relative;
+        &:before {
+            position: absolute;
+            font-family: 'icomoon';
+            content: '\f105';
+            left: 0;
+            top: 0;
+            color: $green;
+            font-size: 18px;
+        }
+    }
+    a {
+        color: #b7c3c8;
+        font-size: 15px;
+        font-family: $roboto;
+        font-weight: 400;
+    }
+}
+
 .footer__copy {
     padding-top: 27px;
     padding-bottom: 35px;
@@ -211,4 +235,91 @@ a {
     font-size: 15px;
     color: #919699;
     font-weight: 400;
+}
+
+.footer__form-title {
+    font-size: 20px;
+    line-height: 36px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-family: $roboto;
+}
+
+.footer__social {
+    li {
+        display: inline-block;
+        &+li {
+            margin-left: 7px;
+        }
+    }
+    a {
+        span {
+            color: #fff;
+            position: relative;
+            width: 28px;
+            height: 28px;
+            display: inline-block;
+            font-size: 20px;
+        }
+        .icon-facebook {
+            background-color: #3b5998;
+        }
+        .icon-twitter {
+            background-color: #55acee;
+        }
+        .icon-youtube-play {
+            background-color: #e52d27;
+        }
+        .icon-pinterest {
+            background-color: #fff;
+            color: #bd081c;
+        }
+        .icon-linkedin {
+            background-color: #1565c0;
+        }
+    }
+}
+
+.footer__form {
+    input {
+        line-height: 40px;
+        width: 215px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 14px;
+        font-family: $roboto;
+        background-color: #2f3c43;
+        outline: none;
+        border: 1px solid #000101;
+        border-bottom: 1px solid #253136;
+        border-right: none;
+        color: #fff;
+        &::placeholder {
+            color: #697378;
+        }
+    }
+    button {
+        border: 1px solid #000101;
+        border-bottom: 1px solid #253136;
+        border-left: none;
+        outline: none;
+        background-color: $green;
+        position: relative;
+        width: 44px;
+        height: 44px;
+        top: 4px;
+        left: -4px;
+        &:before {
+            // position: absolute;
+            font-family: 'icomoon';
+            content: '\f124';
+            font-size: 20px;
+            line-height: 38px;
+            color: #fff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% -50%);
+            cursor: pointer;
+        }
+    }
 }
