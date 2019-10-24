@@ -30,7 +30,7 @@
                             <span class="icon-shopping-cart header-icon"></span>
                         </div>
                         <div class="header__btn">
-                            <button class="header__login">Login</button>
+                            <a data-fancybox data-src="#modal" href="javascript:;" class="header__login">Login</a>
                             <button class="header__registr">Register</button>
                         </div>
                     </div>
@@ -77,6 +77,26 @@
         </div>
     </header>
 
+    <div class="popup__login" id="modal">
+        <div class="popup__login-title">
+            login
+        </div>
+        <form class="popup__login-form">
+            <label class="popup__login-name">
+                <input type="text" placeholder="Name">
+            </label>
+            <label class="popup__login-password">
+                <input type="password" placeholder="Password">
+            </label>
+            <div class="popup__login-btn">
+                <button>submit</button>
+                <a class="popup__login-create" href="#">Creat An Account?</a>
+            </div>
+            <a class="popup__lost-password" href="#">Lost Password?</a>
+
+        </form>
+    </div>
+
     <div class="search">
         <div class="search__title">
             Premium WordPress Themes, Web Templates and Many More ...
@@ -108,7 +128,7 @@
             </div>
         </div>
 
-        
+
 
 
 

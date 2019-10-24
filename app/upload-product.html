@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:700|Open+Sans:600|Raleway:700|Roboto:400,500,700,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:700|Open+Sans:600|Raleway:700|Roboto:400,500,700,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -28,7 +30,7 @@
                             <span class="icon-shopping-cart header-icon"></span>
                         </div>
                         <div class="header__btn">
-                            <button class="header__login">Login</button>
+                            <a data-fancybox data-src="#modal" href="javascript:;" class="header__login">Login</a>
                             <button class="header__registr">Register</button>
                         </div>
                     </div>
@@ -75,6 +77,26 @@
         </div>
     </header>
 
+    <div class="popup__login" id="modal">
+        <div class="popup__login-title">
+            login
+        </div>
+        <form class="popup__login-form">
+            <label class="popup__login-name">
+                <input type="text" placeholder="Name">
+            </label>
+            <label class="popup__login-password">
+                <input type="password" placeholder="Password">
+            </label>
+            <div class="popup__login-btn">
+                <button>submit</button>
+                <a class="popup__login-create" href="#">Creat An Account?</a>
+            </div>
+            <a class="popup__lost-password" href="#">Lost Password?</a>
+
+        </form>
+    </div>
+
 
 
     <footer class="footer">
@@ -87,14 +109,15 @@
                                 About Company
                             </div>
                             <div class="footer__text">
-                                Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit amet urna iat.Praesent vel rutrum purus.
+                                Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce
+                                sit amet urna iat.Praesent vel rutrum purus.
                             </div>
                             <div class="footer__adress">
                                 PO Box 16122 Collins Street West Victoria 8007 Australia
                             </div>
                             <div class="footer__tel">
                                 <a href="#">
-                                        +61 3 8376 6284
+                                    +61 3 8376 6284
                                 </a>
 
                             </div>
